@@ -91,6 +91,10 @@
       color: #ffffff;
     }
 
+    @include mobile {
+      width: 60%;
+    }
+
     @include tablet {
       width: 30%;
     }
@@ -98,7 +102,7 @@
       width: 80%;
     }
     @include wide-desktop {
-      width: 60%;
+      width: 70%;
     }
   }
 
