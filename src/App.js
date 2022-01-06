@@ -6,6 +6,8 @@ import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import MainLayout from "./components/mainLayout/MainLayout";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // const truncate = (input, len) =>
 //   input.length > len ? `${input.substring(0, len)}...` : input;
 //

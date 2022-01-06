@@ -1,0 +1,114 @@
+@import "../../styles/rwd";
+
+.header-comp {
+  &-logo {
+    width: 70px;
+    margin-right: 0 !important;
+  }
+
+  &-social .item, &-menu .item {
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    color: #ffffff !important;
+    cursor: pointer;
+  }
+
+  &-social, &-btn {
+    flex: 1;
+  }
+
+  &-social {
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      transition: background-color .2s ease-out;
+      border-radius: 100%;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #e63059 !important;
+      }
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    @include mobile {
+      flex-direction: row !important;
+      margin-bottom: 12px;
+      .item:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+
+    @include tablet {
+      flex-direction: row !important;
+      margin-bottom: 12px;
+      .item:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &-menu {
+    flex: 3;
+
+    .item {
+      font-size: 20px;
+      transition: color .3s ease-in-out;
+
+      &:hover {
+        color: #e63059 !important;
+      }
+
+      @include mobile {
+        margin-bottom: 12px;
+      }
+      @include tablet {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &-btn .button-item {
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e63059;
+    height: 100%;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    transition: background-color .5s ease-in;
+
+    &:hover {
+      background-color: #e63059;
+      color: #ffffff;
+    }
+
+    @include tablet {
+      width: 30%;
+    }
+    @include desktop {
+      width: 80%;
+    }
+    @include wide-desktop {
+      width: 60%;
+    }
+  }
+
+  &-toggle-custom {
+    color: unset !important;
+    box-shadow: unset !important;
+    border-color: unset !important;
+
+    span {
+      background-image: url("../../assets/icons/hamburger.png") !important;
+    }
+  }
+}

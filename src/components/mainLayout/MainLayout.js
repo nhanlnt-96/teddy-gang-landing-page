@@ -4,7 +4,7 @@ import BannerComp from "../banner/BannerComp";
 
 const MainLayout = () => {
   return (
-    <Container className="main-layout">
+    <Container fluid className="main-layout">
       <Row id="home">
         <BannerComp/>
       </Row>

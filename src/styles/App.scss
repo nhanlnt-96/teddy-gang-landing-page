@@ -1,8 +1,13 @@
-@import url("https://www.dafontfree.net/embed/aW1wYWN0LXJlZ3VsYXImZGF0YS8yNS9pLzEyOTYxMi9pbXBhY3QudHRm");
+@import "./rwd";
+
+@font-face {
+  font-family: "Impact";
+  src: url(ImpactLTStd.woff) format("woff");
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'impact-regular', sans-serif;
+  font-family: 'Impact', sans-serif;
 }
