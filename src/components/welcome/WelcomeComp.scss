@@ -1,0 +1,49 @@
+@import "../../styles/rwd";
+
+.welcome-comp {
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 24px 0;
+
+  &-container {
+    height: 100%;
+  }
+}
+
+.welcome-comp-container .welcome-comp-content {
+  .left-side-content {
+    .content-title, .content {
+      color: #ffffff;
+      font-family: Impact, sans-serif;
+      font-weight: bold;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    .content-title {
+      font-size: 50px;
+    }
+
+    .content {
+      margin-top: 24px;
+      font-size: 25px;
+    }
+
+    @include tablet {
+      .content-title {
+        font-size: 35px;
+      }
+      .content {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .right-side-content {
+    img {
+      width: 100%;
+    }
+  }
+}

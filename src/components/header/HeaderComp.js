@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Nav, Navbar} from "react-bootstrap";
-import Logo from '../../assets/imgs/logo.webp';
+import Logo from '../../assets/imgs/logo.png';
 import {headerMenu} from "../../configs/headerMenu";
 import {SiInstagram, SiTwitter} from "react-icons/all";
 
