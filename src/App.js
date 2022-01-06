@@ -4,8 +4,7 @@ import {connect} from "./redux/blockchain/blockchainActions";
 import {fetchData} from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
-import MainLayout from "./mainLayout/MainLayout";
-import {ParallaxProvider} from "react-scroll-parallax";
+import MainLayout from "./components/mainLayout/MainLayout";
 
 // const truncate = (input, len) =>
 //   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -196,9 +195,7 @@ function App() {
   // }, [blockchain.account]);
   
   return (
-    <ParallaxProvider>
-      <MainLayout/>
-    </ParallaxProvider>
+    <MainLayout/>
     // <s.Screen>
     //   <s.Container
     //     flex={1}
