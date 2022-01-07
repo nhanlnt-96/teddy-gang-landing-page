@@ -6,7 +6,7 @@ import './WelcomeComp.scss';
 
 const WelcomeComp = () => {
   return (
-    <Container fluid className="welcome-comp">
+    <Container fluid className="welcome-comp comp-height">
       <Container className="welcome-comp-container d-flex justify-content-center align-items-center">
         <Row className="welcome-comp-content">
           <Col lg={6} sm={12} className="left-side-content d-flex flex-column justify-content-center">

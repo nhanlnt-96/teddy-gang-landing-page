@@ -4,7 +4,7 @@ import './AboutComp.scss';
 
 const AboutComp = () => {
   return (
-    <Container fluid className="about-comp">
+    <Container fluid className="about-comp comp-height">
       <Container className="about-comp-container d-flex justify-content-center align-items-center">
         <Row className="about-comp-content">
           <h6 data-aos="fade-up" className="title">About us</h6>

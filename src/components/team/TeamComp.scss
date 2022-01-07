@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+@import "../../styles/rwd";
+
+.team-comp {
+  background-color: $primary-color;
+
+  &-container {
+    height: 100%;
+  }
+}
+
+.team-comp-container .team-comp-content {
+  .team-comp-title {
+    font-size: 72px;
+    text-transform: uppercase;
+    font-family: Impact, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    @include mobile {
+      font-size: 50px;
+    }
+  }
+
+  .item {
+    margin-top: 36px;
+
+    &-content {
+      margin-top: 12px;
+
+      .name, .title, .about {
+        color: #ffffff;
+        font-family: Impact, sans-serif;
+        font-size: 35px;
+        @include tablet {
+          font-size: 25px;
+        }
+      }
+    }
+
+    &-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
