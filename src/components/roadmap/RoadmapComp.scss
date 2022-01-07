@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/rwd";
+
+.roadmap-comp {
+  background-color: $primary-color;
+
+  &-container {
+    height: 100%;
+  }
+}
+
+.roadmap-comp-container .item-container {
+  background-color: rgba(0, 0, 0, .2);
+  padding: 20px 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  .item-title, .roadmap-percent {
+    color: #000000;
+    font-family: Impact, sans-serif;
+    font-size: 72px;
+    @include mobile {
+      font-size: 50px;
+    }
+  }
+
+  .item-title {
+    margin-bottom: 24px;
+  }
+
+  .roadmap-detail {
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  .desc {
+    color: #ffffff;
+    font-family: Impact, sans-serif;
+    font-size: 30px;
+    @include mobile {
+      font-size: 25px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}
