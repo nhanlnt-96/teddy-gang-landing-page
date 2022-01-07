@@ -1,0 +1,74 @@
+@import "../../styles/rwd";
+
+.faq-comp {
+  background-color: #000000;
+  padding: 24px 0;
+
+  &-container {
+    height: 100%;
+  }
+}
+
+.faq-comp .faq-comp-container {
+  .title {
+    font-size: 72px;
+    color: #ffffff;
+    font-family: Impact, sans-serif;
+    text-align: center;
+    @include mobile {
+      .title {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .accordion-custom {
+    width: 100%;
+
+    .accordion-item {
+      background-color: transparent;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      .accordion-button, .accordion-body {
+        background-color: rgba(255, 255, 255, .1);
+      }
+
+      .accordion-button {
+        font-family: Impact, sans-serif;
+        color: #ffffff;
+        font-size: 25px;
+
+        &:after {
+          width: 2rem !important;
+          height: 2rem !important;
+          border-radius: 100%;
+          background-color: #ffffff;
+          background-position: center;
+          background-image: url("../../assets/icons/right-arrow.png") !important;
+        }
+
+        &:not(.collapsed)::after {
+          transform: rotate(90deg) !important;
+        }
+
+        &:focus {
+          outline: none !important;
+          box-shadow: none !important;
+        }
+      }
+
+      .accordion-body {
+        border-top: 1px solid rgba(255, 255, 255, .4);
+
+        .answer-content {
+          font-size: 20px;
+          color: #ffffff;
+          font-family: Impact, sans-serif;
+        }
+      }
+    }
+  }
+}
