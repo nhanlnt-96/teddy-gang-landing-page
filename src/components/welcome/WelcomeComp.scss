@@ -23,12 +23,21 @@
     }
 
     .content-title {
-      font-size: 50px;
+      font-size: 72px;
     }
 
     .content {
       margin-top: 24px;
       font-size: 25px;
+    }
+
+    @include mobile {
+      .content-title {
+        font-size: 50px;
+      }
+      .content {
+        font-size: 20px;
+      }
     }
 
     @include tablet {

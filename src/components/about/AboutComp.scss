@@ -1,0 +1,45 @@
+@import "../../styles/rwd";
+
+.about-comp {
+  background-color: #000000;
+  min-height: 100vh;
+  padding: 24px 0;
+
+  &-container {
+    height: 100%;
+  }
+}
+
+.about-comp-container .about-comp-content {
+  .title, .content {
+    color: #ffffff;
+    font-family: Impact, sans-serif;
+    text-align: justify;
+  }
+
+  .title {
+    font-size: 72px;
+  }
+
+  .content {
+    font-size: 30px;
+    line-height: 40px;
+
+    &:first-child {
+      margin-top: 24px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 36px;
+    }
+  }
+
+  @include mobile {
+    .title {
+      font-size: 50px;
+    }
+    .content {
+      font-size: 25px;
+    }
+  }
+}

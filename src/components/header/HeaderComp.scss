@@ -1,3 +1,4 @@
+@import "../../styles/variables";
 @import "../../styles/rwd";
 
 .header-comp {
@@ -30,7 +31,7 @@
 
       &:hover {
         background-color: #ffffff;
-        color: #e63059 !important;
+        color: $primary-color !important;
       }
 
       &:not(:first-child) {
@@ -63,7 +64,7 @@
       transition: color .3s ease-in-out;
 
       &:hover {
-        color: #e63059 !important;
+        color: $primary-color !important;
       }
 
       @include mobile {
@@ -79,7 +80,7 @@
     font-family: Impact, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    color: #e63059;
+    color: $primary-color;
     height: 100%;
     padding: 20px 0;
     border: none;
@@ -87,7 +88,7 @@
     transition: background-color .5s ease-in;
 
     &:hover {
-      background-color: #e63059;
+      background-color: $primary-color;
       color: #ffffff;
     }
 

@@ -3,12 +3,16 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
-import { Provider } from "react-redux";
+import {Provider} from "react-redux";
 import "./styles/reset.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App/>
   </Provider>,
   document.getElementById("root")
 );
