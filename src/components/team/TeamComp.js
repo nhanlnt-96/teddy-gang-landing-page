@@ -12,7 +12,7 @@ const TeamComp = () => {
           <h6 data-aos="fade-up" className="team-comp-title">Team member</h6>
           {
             teamData.map((val, index) => (
-              <Col xl={4} lg={4} md={4} sm={12} data-aos="fade-up" className="item">
+              <Col xl={4} lg={4} md={4} sm={12} data-aos="zoom-in" className="item">
                 <div className="item-img">
                   <img src={val.ava} alt={`${val.name.replaceAll(" ", "")}-${val.title.replaceAll(" ", "")}`}/>
                 </div>
