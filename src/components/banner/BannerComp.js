@@ -7,9 +7,10 @@ import {useDispatch, useSelector} from "react-redux";
 import {fetchData} from "../../redux/data/dataActions";
 import * as s from "../../styles/globalStyles";
 import {connect} from "../../redux/blockchain/blockchainActions";
+import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
+import {notification} from 'antd';
 
 import './BannerComp.scss';
-import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
 
 const BannerComp = () => {
   const dispatch = useDispatch();
@@ -119,6 +120,13 @@ const BannerComp = () => {
     <Parallax bgImage={BgBanner} strength={500} className="banner-comp">
       <HeaderComp btnClick={onConnectBtnClick}/>
       <Container className="banner-comp-container d-flex justify-content-center align-items-center">
+        {
+          blockchain.errorMsg && notification.info({
+            message: `Error`,
+            description: blockchain.errorMsg,
+            placement: 'bottomRight',
+          })
+        }
         {
           blockchain.account && (
             <div data-aos="zoom-in" className="mint-connected">
