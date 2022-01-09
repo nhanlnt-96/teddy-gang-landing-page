@@ -6,7 +6,7 @@ import {SiInstagram, SiTwitter} from "react-icons/all";
 
 import './HeaderComp.scss';
 
-const HeaderComp = () => {
+const HeaderComp = ({btnClick}) => {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container className="header-comp-container">
@@ -27,7 +27,7 @@ const HeaderComp = () => {
             }
           </Nav>
           <Nav className="header-comp-btn d-flex justify-content-center align-items-center">
-            <button className="button-item">connect</button>
+            <button onClick={btnClick} className="button-item">connect</button>
           </Nav>
         </Navbar.Collapse>
       </Container>
